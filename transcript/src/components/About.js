@@ -3,7 +3,7 @@ import aboutImage from '../assets/Mask-Group.png';
 
 function App() {
   return (
-    <div className="about-container">
+    <div className="about-container" id='about'>
       <div className="left-section">
         <img src={aboutImage} alt="" />
       </div>

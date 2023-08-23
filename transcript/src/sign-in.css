@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Poppins:wght@300;500&family=Quicksand&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000;
+  --saturatedblue: rgb(33, 170, 216);
+  --white: #fff;
+  --gray:  rgb(168, 167, 167);
+  --lightgray: rgb(230, 227, 227);
+  --darkblue: hsl(240, 54%, 46%);
+  --red: rgb(255, 0, 0);
+}
+
+/* Login Page Styling */
+body {
+    background-color: var(--white);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  /* Image Styling */
+  .image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bottom1,
+  .bottom2 {
+    position: absolute;
+    color: var(--white);
+    bottom: 12rem;
+    padding-left: 2rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .bottom1 {
+    margin-bottom: 5rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  
+  .bottom2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--white);
+  }
+  
+  img {
+    width: 40vw;
+    height: 100vh;
+  }
+  /* End of Image Styling */
+  
+  /* Login Container Styling */
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .logo h1 {
+    color: var(--dark-gray);
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  
+  label {
+    color: var(--dark-gray);
+    font-weight: 600;
+  }
+  
+  .password {
+    margin-top: 0.7rem;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+   border: 1px solid var(--lightgray);
+   background-color: var(--lightgray);
+   border-radius: .3rem;
+    padding: .6rem;
+    width: 100%;
+  }
+
+  #remember {
+    font-weight: 400;
+    font-size: .8rem;
+  }
+  
+  .remember-me label {
+    margin-left: 0.5rem;
+    color: var(--dark-gray);
+  }
+  
+  .remember-me {
+    padding-top: 1rem;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .remember-me p {
+    display: flex;
+    margin-left: 6rem;
+    cursor: pointer;
+    font-size: .8rem;
+    color: var(--saturatedblue);
+  }
+  
+  .remember-me a {
+    color: var(--darkgray);
+  }
+  
+  .remember-me a:hover {
+    color: var(--darkblue);
+  }
+  
+  /* Button Styling */
+  .btn {
+    background-color: var(--saturatedblue);
+    color: var(--white);
+    width: 100%;
+    padding: 0.8rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.3rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .btn:hover {
+    background-color: var(--darkblue);
+    color: var(--white);
+  }
+
+  /* End of The Button Styling */
+  
+  .register {
+    text-align: center;
+    justify-content: center;
+    color: var(--gray);
+    font-size: .9rem;
+    margin-top: 3rem;
+  }
+  
+  .register a {
+    color: var(--saturatedblue);
+    margin-left: 0.2rem;
+  }
+  
+  .register a:hover {
+    color: var(--green);
+  }
+  /* End of Login Page Styling */
+  
+  /* Media Queries */
+  @media screen and (max-width: 1024px) {
+    img {
+      width: 40vw;
+    }
+  
+    .bottom1,
+    .bottom2 {
+      padding-left: 3rem;
+    }
+  
+    .login-container {
+      padding-top: 6rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    img {
+      width: 40vw;
+      height: 100vh;
+    }
+  
+    .bottom1,
+    .bottom2 {
+      padding-left: 2rem;
+    }
+  
+    .bottom2 {
+      font-size: 1rem;
+    }
+  
+    .login-container {
+       padding-left: 1.5rem;
+      padding-top: 3rem; 
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    img, .bottom1, .bottom2 {
+      display: none;
+    }
+  
+    .logo img {
+      display: block;
+      width: 100px;
+      height: 70px;
+      margin: auto;
+    }
+    }
+ 
+  

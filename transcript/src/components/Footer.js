@@ -3,7 +3,7 @@ import logoImage from "../assets/Logo.png";
 function App() {
   return (
     <footer>
-      <div className="footer-container">
+      <div className="footer-container" id="contact">
       <img src={logoImage} alt="Brand logo" />
         <hr />
 
