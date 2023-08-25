@@ -1,5 +1,9 @@
 import logoImage from "../assets/logo 1.png";
-import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+// import { Link } from "react-scroll";
+// import SignIn from "../pages/SignIn";
+// import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -9,38 +13,38 @@ function Nav() {
       </div>
       <ul>
         <li className="nav-item">
-          <Link to="/" spy={true} smooth={true} offset={-100} duration={500}>
+          <ScrollLink to="/" spy={true} smooth={true} offset={-100} duration={500}>
             Home
-          </Link>
+          </ScrollLink>
         </li>
         <li className="nav-item">
-          <Link to="service" spy={true} smooth={true} duration={500}>
+          <ScrollLink to="service" spy={true} smooth={true} duration={500}>
             Services
-          </Link>
+          </ScrollLink>
         </li>
         <li className="nav-item">
-          <Link to="about" spy={true} smooth={true} duration={500}>
+          <ScrollLink to="about" spy={true} smooth={true} duration={500}>
             About
-          </Link>
+          </ScrollLink>
         </li>
         <li className="nav-item">
-          <Link to="testimonial" spy={true} smooth={true} duration={500}>
+          <ScrollLink to="testimonial" spy={true} smooth={true} duration={500}>
            Testimonial
-          </Link>
+          </ScrollLink>
         </li>
         <li className="nav-item">
-          <Link to="contact" spy={true} smooth={true} duration={500}>
+          <ScrollLink to="contact" spy={true} smooth={true} duration={500}>
             Contact Us
-          </Link>
+          </ScrollLink>
         </li>
       </ul>
 
       <div className="right-nav">
-        <button className="btn-sign-in">
-          <a href="transcript-sign-in.html">Log in</a>
+        <button className="login">
+        <RouterLink to="/signin">Login</RouterLink>
         </button>
-        <button className="btn-sign-up">
-          <a href="sign-up.html">Sign Up Now</a>
+        <button className="signup">
+          <a href="/signUp">Sign Up Now</a>
         </button>
       </div>
     </nav>
