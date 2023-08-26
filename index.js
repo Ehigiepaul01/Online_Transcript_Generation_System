@@ -9,7 +9,7 @@ dotenv.config()
 
 const app = express()
 const PORT = process.env.PORT || 3000
-mongoose.connect("mongodb://localhost:27017/transcriptDB", {
+mongoose.connect(process.env.MONGO_URL, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true
 })
