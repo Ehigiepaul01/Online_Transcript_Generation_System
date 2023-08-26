@@ -1,9 +1,6 @@
 import logoImage from "../assets/logo 1.png";
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-// import { Link } from "react-scroll";
-// import SignIn from "../pages/SignIn";
-// import { Link } from "react-router-dom";
 
 function Nav() {
   return (
