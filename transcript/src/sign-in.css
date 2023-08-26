@@ -96,7 +96,7 @@ body {
    background-color: var(--lightgray);
    border-radius: .3rem;
     padding: .6rem;
-    width: 100%;
+    width: 50%;
   }
 
   #remember {
@@ -135,7 +135,7 @@ body {
   .btn {
     background-color: var(--saturatedblue);
     color: var(--white);
-    width: 100%;
+    width: 50%;
     padding: 0.8rem;
     font-weight: bold;
     border: none;

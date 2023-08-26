@@ -51,23 +51,17 @@ nav {
   background-color: var(--white);
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 75%;
-}
-
 nav ul li {
   display: inline-block;
   text-align: center;
   justify-content: center;
   padding: 0 1.5rem;
+  cursor: pointer;
 }
 
 nav ul li a {
   color: var(--black);
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.1rem;
 }
 
@@ -86,29 +80,31 @@ button {
   font-weight: 200;
   margin: 0.4rem;
   cursor: pointer;
+  background-color: var(--saturatedblue);
+
 }
 
-.btn-sign-up {
+.login {
   background-color: var(--saturatedblue);
   color: var(--white);
 }
 
-.btn-sign-in {
+.login {
   background-color: var(--white);
 }
 
-.btn-sign-in a {
+.login a {
   color: var(--saturatedblue);
   font-weight: 600;
   font-size: 1.2rem;
 }
 
-.btn-sign-up a {
+.signup a {
   color: var(--white);
   font-weight: 600;
 }
 
-.btn-sign-up:hover {
+.signup:hover {
   background-color: var(--darkblue);
   color: var(--black);
 }

@@ -1,7 +1,6 @@
 import React from 'react';
-import '../sign-in.css'
-import Login from '../components/Login';
-import Image from '../components/Image';
+import Login from './Login';
+import Image from './Image';
 
 function SignIn() {
     return (

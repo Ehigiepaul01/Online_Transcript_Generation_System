@@ -1,7 +1,6 @@
-
-import cardImage1 from '../assets/Rectangle 26.png'; 
-import cardImage2 from '../assets/Rectangle 26 (1).png';
-import cardImage3 from '../assets/Rectangle 26 (2).png';
+import cardImage1 from "../assets/Rectangle 26.png";
+import cardImage2 from "../assets/Rectangle 26 (1).png";
+import cardImage3 from "../assets/Rectangle 26 (2).png";
 
 function App() {
   return (
@@ -14,10 +13,10 @@ function App() {
               <img src={cardImage1} alt="card" />
               <p>pay school fees</p>
             </div>
-            <h6>No more bank queues.</h6>
+            <h6>No more long queues.</h6>
             <p>
-              Pay your school fees securely with our service and keep close
-              track.
+              Access to an exclusive platform that allow you explore different
+              possibilities.
             </p>
           </div>
         </div>

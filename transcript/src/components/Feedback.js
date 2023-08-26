@@ -10,11 +10,9 @@ function App() {
         <div className="feedback-content">
           <img src={feedbackImage} alt="avatar" />
           <p>
-            It is not everyday that you come across a passionate and
-            trustworthy financial advisor <br />
-            John has encompassed that really well has provided us with the
-            helping hand to <br />
-            dream that much more and make that dream a possible reality.
+            It is not easy to come across a wonderful platform like Roam. <br />
+            Roam has made downloading my stranscripts so easy and stress free <br />
+             as I no longer have to move from desk to desk before getting my trabscripts.
           </p>
 
           <h4 className="name">Marie Bolanle</h4>

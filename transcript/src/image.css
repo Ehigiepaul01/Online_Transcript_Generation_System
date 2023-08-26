@@ -1,0 +1,72 @@
+/* Image.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Poppins:wght@300;500&family=Quicksand&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000;
+    --saturatedblue: rgb(33, 170, 216);
+    --white: #fff;
+    --gray: rgb(168, 167, 167);
+    --lightgray: rgb(230, 227, 227);
+    --darkblue: hsl(240, 54%, 46%);
+    --red: rgb(255, 0, 0);
+}
+
+.image-container {
+    display: flex;
+}
+
+.image1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 40vw;
+    height: 100vh;
+}
+
+.bottom1,
+.bottom2 {
+    position: absolute;
+    color: var(--white);
+    bottom: 8rem;
+    padding-left: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.bottom1 {
+    margin-bottom: 5rem;
+    font-weight: 400;
+    font-size: 2.3rem;
+}
+
+.bottom2 {
+    font-size: 1.1rem;
+    padding-top: 1.3rem;
+    font-weight: 400;
+    color: var(--white);
+}
+
+/* Add responsive styles here */
+@media screen and (max-width: 768px) {
+    .image-container {
+        padding: 1rem;
+    }
+
+    .bottom1 {
+        font-size: 1.2rem;
+    }
+
+    .bottom2 {
+        font-size: 0.9rem;
+    }
+}
