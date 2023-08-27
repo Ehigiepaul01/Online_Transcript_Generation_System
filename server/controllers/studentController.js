@@ -1,4 +1,5 @@
 const Student = require("../models/Student")
+
 async function addStudent(req, res) {
 	try {
 		const { firstName, lastName, studentID } = req.body
