@@ -9,11 +9,13 @@ dotenv.config()
 
 const app = express()
 const PORT = process.env.PORT || 3000
-mongoose.connect(process.env.MONGO_URL, {
-	useNewUrlParser: true,
-	useUnifiedTopology: true
-})
+
+const db = async () => {
+	await mongoose.connect(process.env.MONGO_URL)
+}
+db()
 app.use(express.json())
+app.get("/")
 app.use("/auth", authRoutes)
 app.use("/students", studentRoutes)
 app.use("/upload", uploadRoutes)
